@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<TargetFrameworks Condition="'$(UnoTargetFrameworkMobileOverride)'!=''">$(UnoTargetFrameworkMobileOverride)</TargetFrameworks>
-		<TargetFrameworks Condition="'$(UnoTargetFrameworkMobileOverride)'==''">net8.0-android;net8.0-ios;net8.0-maccatalyst;net8.0-macos</TargetFrameworks>
+		<TargetFrameworks Condition="'$(UnoTargetFrameworkMobileOverride)'==''">net8.0-android;net8.0-ios;net8.0-maccatalyst</TargetFrameworks>
 		<SingleProject>true</SingleProject>
 		<OutputType>Exe</OutputType>
 		<AssemblyName>TestHarnessApp</AssemblyName>
@@ -50,7 +50,6 @@
 		<ProjectReference Include="..\..\..\src\Uno.Extensions.Core.Generators\Uno.Extensions.Core.Generators.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
 		<ProjectReference Include="..\..\..\src\Uno.Extensions.Hosting.UI\Uno.Extensions.Hosting.WinUI.csproj" />
 		<ProjectReference Include="..\..\..\src\Uno.Extensions.Hosting\Uno.Extensions.Hosting.csproj" />
-		<ProjectReference Include="..\..\..\src\Uno.Extensions.Logging.Serilog\Uno.Extensions.Logging.Serilog.csproj" />
 		<ProjectReference Include="..\..\..\src\Uno.Extensions.Logging\Uno.Extensions.Logging.WinUI.csproj" />
 		<ProjectReference Include="..\..\..\src\Uno.Extensions.Navigation.Toolkit\Uno.Extensions.Navigation.Toolkit.WinUI.csproj" />
 		<ProjectReference Include="..\..\..\src\Uno.Extensions.Navigation.UI\Uno.Extensions.Navigation.WinUI.csproj" />
